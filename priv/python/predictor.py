@@ -9,8 +9,7 @@ def predict(input_data):
     prediction = model.predict(data)
     return prediction[0]
 
-if __name__ == "__main__":
-    input_data = json.loads(sys.argv[1])
-    result = predict(input_data)
-    print(json.dumps(str(result)))
+input_data = json.loads(sys.argv[1])
+result = predict(input_data)
+print(json.dumps(str(result)))
 
